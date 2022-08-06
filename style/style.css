@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #000 url(../img/fundopreto.jpg);
+}
+
+/*CONTAINER PRINCIPAL*/
+#container{
+  background: #000 url(../img/carros.jpg);
+  border: 2px solid yellow;
+  width: 1000px;
+  height: 500px;
+  margin: 80px auto;
+  border-radius: 5px;
+  background-position: right;
+  background-repeat: repeat-x;
+  animation: animatedBackground 30s linear infinite alternate;
+}
+
+/*IMAGEM ESQUERDA*/
+#fundo-esquerdo{
+  width: 500px;
+  height: 500px;
+  background: url(../img/fundo.jpeg) no-repeat left;
+  float: left;
+  
+}
+
+/* FORMULARIO LOGIN PERSONALIZAÇÃO */
+a{
+  text-decoration: none;
+}
+
+#formlogin{
+  width: 300px;
+  height: 255px;
+  text-align: center;
+  margin: 140px 90px;
+  background-color: rgba(0, 2, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px black;
+  float: left;
+}
+
+
+
+#formlogin img{
+    width: 250px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+}
+
+
+input.senha, input.email{
+  height: 40px;
+  width: 80%;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding-left: 40px;
+  border-radius: 17px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+input.radio{
+  width: 50px;
+  margin-bottom: 10px;
+  margin-right: -15px;
+
+}
+
+input.email{
+  background-image: url(../img/icone-usuario.png);
+  cursor: pointer;
+  margin: 20 0px;
+}
+
+input.senha{
+  background-image: url(../img/icone-cadeado.png);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/*input.submit{
+  color: #fff ;
+  background-color: #000;
+  border: 2px solid yellow;
+  padding: 5px 20px;
+  height: 45px;
+  width: 50%;
+  background: linear-gradient(to bottom, yellow, #000);
+}
+
+input.submit:hover{
+  background: linear-gradient(to bottom, #000, yellow);
+}*/
+
+#entrar{
+  color: #000;
+  border-radius: 15px;
+  padding: 10px;
+  background: yellow;
+}
+
+#botao-entrar{
+  margin-top: 18px;
+}
+
+a#entrar:hover{
+  padding: 10px;
+  background: lightyellow;
+}
+
+a#entrar:active{
+  padding: 15px;
+  color: #fff;
+  background: black;
+
+}
+.option{/*personalização select*/
+  color: yellow;
+  text-align: center;
+}
+
+
+#select{
+ width: 120px;
+  color: yellow;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: #000 /*url(../img/marcador.png) no-repeat left center*/;
+  border-radius: 3px;
+}
+
+/*LOGO DENTRO FORM*/
+#logo-login{
+  filter: drop-shadow(10px 5px 5px #222);
+}
+
+/* FIM LOGIN */
+
+/* RODAPÉ */
+#rodape{
+  clear: both;
+  display: inline;
+  color: #000;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 330px;
+  padding: 6px;
+  background: #fff;
+}
+
+/*CODIGO MOVIMENTAR FUNDO*/
+@keyframes animatedBackground {
+  from {
+    background-position: 100px 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
